@@ -42,9 +42,9 @@ module "eks" {
   cluster_endpoint_public_access  = true
 
   eks_managed_node_group_defaults = {
-    min_size                   = 2
-    max_size                   = 2
-    desired_size               = 2
+    min_size                   = 1
+    max_size                   = 1
+    desired_size               = 1
     instance_types             = local.aws_eks_managed_node_groups_instance_types
     use_custom_launch_template = false
     tags                       = local.aws_project_tags
