@@ -27,3 +27,7 @@ jobs:
       - name: Terraform plan
         working-directory: ./src
         run: terraform plan
+
+      - name: Terraform Validate
+        working-directory: ./src
+        run: terraform validate
